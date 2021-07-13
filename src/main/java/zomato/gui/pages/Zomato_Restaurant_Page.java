@@ -22,7 +22,7 @@ public class Zomato_Restaurant_Page {
     private By addToCart_Btn = By.xpath("//div[@class='sc-1s0saks-11 cYGeYt']//span[@class='sc-1usozeh-6 fTsfFl']");
     private By addToOrder_Btn = By.xpath("//span[@class='sc-1kx5g6g-2 ltILy']");
     private By openCart_btn = By.xpath("//div[1]/span[1]/i[1]/*[local-name()='svg'][1]");
-    private By foodNameInCart_p = By.xpath("//p[@class='zotu0j-6 iaSZFy']");
+    private By foodNameInCart_p = By.xpath("//div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]//ancestor::p");
   
     
     
