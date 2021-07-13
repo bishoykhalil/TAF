@@ -379,3 +379,39 @@ AED55] Button
 2021-07-13 22:27:30,310 INFO  [main] <13-07-2021 22:27:30.310 PM> [Element Action] Click on element [By.xpath: //div[1]/span[1]/i[1]/*[local-name()='svg'][1]]
 2021-07-13 22:28:30,457 INFO  [main] <13-07-2021 22:28:30.457 PM> Expected condition failed: waiting for visibility of element located by By.xpath: //p[@class='zotu0j-6 iaSZFy'] (tried for 60 second(s) with 500 milliseconds interval)
 2021-07-13 22:28:31,157 INFO  [main] <13-07-2021 22:28:31.157 PM> [Browser Action] Close all Opened Browser Windows
+2021-07-13 23:34:15,025 INFO  [main] <13-07-2021 23:34:15.015 PM> Initialize [Google Chrome] Browser and the Execution Type is [Local]
+2021-07-13 23:34:20,656 INFO  [main] <13-07-2021 23:34:20.656 PM> [Browser Action] Maximize the Browser Window
+2021-07-13 23:34:20,821 INFO  [main] <13-07-2021 23:34:20.821 PM> [Browser Action] Navigate to URL [https://www.zomato.com/abudhabi]
+2021-07-13 23:34:27,556 INFO  [main] <13-07-2021 23:34:27.556 PM> [Element Action] Click on [Accept] Button
+2021-07-13 23:34:27,786 INFO  [main] <13-07-2021 23:34:27.786 PM> [Element Action] Type [nkd Pizza] on element [By.xpath: //input[@placeholder='Search for restaurant, cuisine or a dish']]
+2021-07-13 23:34:28,318 INFO  [main] <13-07-2021 23:34:28.318 PM> [Element Action] Click on element [By.xpath: //input[@placeholder='Search for restaurant, cuisine or a dish']]
+2021-07-13 23:34:30,147 INFO  [main] <13-07-2021 23:34:30.146 PM> [Element Action] Click on [nkd Pizza
+3.8
+(46)
+3.8
+(524)
+Mussafah Sanaiya, Abu Dhabi] Button
+2021-07-13 23:34:34,064 INFO  [main] <13-07-2021 23:34:34.064 PM> [Element Action] Get the Text of element [By.xpath: //div[@class='sc-eMigcr coAkuy']]; The Text is [nkd Pizza]
+2021-07-13 23:34:34,178 INFO  [main] <13-07-2021 23:34:34.177 PM> [Browser Action] Close all Opened Browser Windows
+2021-07-13 23:34:34,819 INFO  [main] <13-07-2021 23:34:34.818 PM> Initialize [Google Chrome] Browser and the Execution Type is [Local]
+2021-07-13 23:34:36,116 INFO  [main] <13-07-2021 23:34:36.115 PM> [Browser Action] Maximize the Browser Window
+2021-07-13 23:34:36,262 INFO  [main] <13-07-2021 23:34:36.262 PM> [Browser Action] Navigate to URL [https://www.zomato.com/abudhabi]
+2021-07-13 23:34:41,771 INFO  [main] <13-07-2021 23:34:41.771 PM> [Element Action] Click on [Accept] Button
+2021-07-13 23:34:42,036 INFO  [main] <13-07-2021 23:34:42.035 PM> [Element Action] Type [nkd Pizza] on element [By.xpath: //input[@placeholder='Search for restaurant, cuisine or a dish']]
+2021-07-13 23:34:42,683 INFO  [main] <13-07-2021 23:34:42.683 PM> [Element Action] Click on element [By.xpath: //input[@placeholder='Search for restaurant, cuisine or a dish']]
+2021-07-13 23:34:44,208 INFO  [main] <13-07-2021 23:34:44.208 PM> [Element Action] Click on [nkd Pizza
+3.8
+(46)
+3.8
+(524)
+Mussafah Sanaiya, Abu Dhabi] Button
+2021-07-13 23:34:48,069 INFO  [main] <13-07-2021 23:34:48.069 PM> [Element Action] Get the Text of element [By.xpath: //div[@class='sc-eMigcr coAkuy']]; The Text is [nkd Pizza]
+2021-07-13 23:34:48,594 INFO  [main] <13-07-2021 23:34:48.594 PM> [Element Action] Click on [Order Online] Button
+2021-07-13 23:34:52,212 INFO  [main] <13-07-2021 23:34:52.212 PM> [Element Action] Type [Funghi Town] on element [By.xpath: //input[@type='text']]
+2021-07-13 23:34:53,052 INFO  [main] <13-07-2021 23:34:53.052 PM> [Element Action] Get the Text of element [By.xpath: //div[@class='sc-1s0saks-10 cYSFTJ']//h4[@class='sc-1s0saks-15 iSmBPS']]; The Text is [Funghi Town]
+2021-07-13 23:34:53,370 INFO  [main] <13-07-2021 23:34:53.370 PM> [Element Action] Click on [Add] Button
+2021-07-13 23:34:54,041 INFO  [main] <13-07-2021 23:34:54.041 PM> [Element Action] Click on [Add to order -
+AED55] Button
+2021-07-13 23:34:54,585 INFO  [main] <13-07-2021 23:34:54.584 PM> [Element Action] Click on element [By.xpath: //div[1]/span[1]/i[1]/*[local-name()='svg'][1]]
+2021-07-13 23:34:54,856 INFO  [main] <13-07-2021 23:34:54.856 PM> [Element Action] Get the Text of element [By.xpath: //div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]//ancestor::p]; The Text is [Funghi Town]
+2021-07-13 23:34:54,870 INFO  [main] <13-07-2021 23:34:54.870 PM> [Browser Action] Close all Opened Browser Windows
