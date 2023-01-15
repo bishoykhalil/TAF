@@ -5,7 +5,8 @@ import lombok.Getter;
 public enum TabsEnum {
 
     SIGN_UP("Sign up"),
-    LOGIN("Log in");
+    LOGIN("Log in"),
+    CART("Cart");
     @Getter
     private final String tabName;
 

@@ -15,6 +15,8 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.page;
 
 public class DemoBlaze_LoginPage {
+    private static final Logger LOGGER = LoggerFactory.getLogger(DemoBlaze_SignUpPage.class);
+
     public <E> E on(Supplier<E> supplier){
         return supplier.get();
     }
@@ -48,6 +50,8 @@ public class DemoBlaze_LoginPage {
         enterUsername(username).enterPassword(password).pressLogin();
         $x("//a[text()='Log out']").should(Condition.visible , Duration.ofMillis(20000));
         Assert.assertTrue($x("//a[text()='Log out']").isDisplayed());
-        return page(this);
+        String msg = String.format("login done using %s.",username);
+        LOGGER.info(msg);
+    return page(this);
     }
 }

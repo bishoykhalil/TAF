@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Demo Blaze">
+  <test name="Demo Blaze - Remove item from cart ">
+    <classes>
+      <class name="demoBlaze.tests.Gui_CreateUserAndAddProducts"/>
+    </classes>
+  </test>
+  <parameter name="AddItem" value="true"/>
+  <parameter name="RemoveItem" value="true"/>
+</suite>
