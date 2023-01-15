@@ -7,7 +7,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<selenium.version>3.141.59</selenium.version>
+		<selenium.version>4.1.1</selenium.version>
 		<webdrivermanager.version>4.4.3</webdrivermanager.version>
 		<testng.version>7.4.0</testng.version>
 
@@ -25,7 +25,11 @@
 	</properties>
 
 	<dependencies>
-
+		<dependency>
+			<groupId>com.codeborne</groupId>
+			<artifactId>selenide</artifactId>
+			<version>6.11.0</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
@@ -120,7 +124,11 @@
 			<artifactId>slf4j-api</artifactId>
 			<version>${slf4j.version}</version>
 		</dependency>
-
+		<dependency>
+			<groupId>com.google.googlejavaformat</groupId>
+			<artifactId>google-java-format</artifactId>
+			<version>1.7</version>
+		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-simple</artifactId>
@@ -189,27 +197,27 @@
 		</pluginManagement>
 	</build>
 
-	<profiles>
-		<profile>
-			<id>zomato</id>
-			<properties>
-				<testNGSuite>src\test\resources\TestSuits\zomato.xml.xml</testNGSuite>
-			</properties>
-		</profile>
+<!--	<profiles>-->
+<!--		<profile>-->
+<!--			<id>zomato</id>-->
+<!--			<properties>-->
+<!--				<testNGSuite>src\test\resources\TestSuits\zomato.xml.xml</testNGSuite>-->
+<!--			</properties>-->
+<!--		</profile>-->
 
-		<profile>
-			<id>testngGroups</id>
-			<properties>
-				<testNGSuite>src\test\resources\TestSuits\testgroups.xml</testNGSuite>
-			</properties>
-		</profile>
+<!--		<profile>-->
+<!--			<id>testngGroups</id>-->
+<!--			<properties>-->
+<!--				<testNGSuite>src\test\resources\TestSuits\testgroups.xml</testNGSuite>-->
+<!--			</properties>-->
+<!--		</profile>-->
 
-		<profile>
-			<id>xBrowser</id>
-			<properties>
-				<testNGSuite>src\test\resources\TestSuits\Xbrowser.xml</testNGSuite>
-			</properties>
-		</profile>
-	</profiles>
+<!--		<profile>-->
+<!--			<id>xBrowser</id>-->
+<!--			<properties>-->
+<!--				<testNGSuite>src\test\resources\TestSuits\Xbrowser.xml</testNGSuite>-->
+<!--			</properties>-->
+<!--		</profile>-->
+<!--	</profiles>-->
 
 </project>

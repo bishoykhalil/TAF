@@ -415,3 +415,36 @@ AED55] Button
 2021-07-13 23:34:54,585 INFO  [main] <13-07-2021 23:34:54.584 PM> [Element Action] Click on element [By.xpath: //div[1]/span[1]/i[1]/*[local-name()='svg'][1]]
 2021-07-13 23:34:54,856 INFO  [main] <13-07-2021 23:34:54.856 PM> [Element Action] Get the Text of element [By.xpath: //div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]//ancestor::p]; The Text is [Funghi Town]
 2021-07-13 23:34:54,870 INFO  [main] <13-07-2021 23:34:54.870 PM> [Browser Action] Close all Opened Browser Windows
+2023-01-15 13:48:16,269 INFO  [main] <15-01-2023 13:48:16.253 PM> Initialize [Google Chrome] Browser and the Execution Type is [Local]
+2023-01-15 13:48:16,949 INFO  [main] <15-01-2023 13:48:16.949 PM> Initialize [Google Chrome] Browser and the Execution Type is [Local]
+2023-01-15 13:52:23,326 INFO  [main] <15-01-2023 13:52:23.316 PM> Initialize [Google Chrome] Browser and the Execution Type is [Local]
+2023-01-15 13:52:32,609 INFO  [main] <15-01-2023 13:52:32.609 PM> [Browser Action] Maximize the Browser Window
+2023-01-15 13:52:32,848 INFO  [main] <15-01-2023 13:52:32.848 PM> [Browser Action] Navigate to URL [https://www.zomato.com/abudhabi]
+2023-01-15 13:52:38,393 INFO  [main] <15-01-2023 13:52:38.393 PM> [Element Action] Click on [Accept] Button
+2023-01-15 13:52:38,643 INFO  [main] <15-01-2023 13:52:38.643 PM> [Element Action] Type [nkd Pizza] on element [By.xpath: //input[@placeholder='Search for restaurant, cuisine or a dish']]
+2023-01-15 13:52:39,242 INFO  [main] <15-01-2023 13:52:39.242 PM> [Element Action] Click on element [By.xpath: //input[@placeholder='Search for restaurant, cuisine or a dish']]
+2023-01-15 13:52:40,992 INFO  [main] <15-01-2023 13:52:40.992 PM> [Element Action] Click on [nkd Pizza
+3.9
+DINING
+3.9
+DELIVERY
+Mussafah Sanaiya, Abu Dhabi] Button
+2023-01-15 13:53:45,045 INFO  [main] <15-01-2023 13:53:45.044 PM> Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='sc-eMigcr coAkuy'] (tried for 60 second(s) with 500 milliseconds interval)
+2023-01-15 13:53:46,473 INFO  [main] <15-01-2023 13:53:46.473 PM> [Browser Action] Close all Opened Browser Windows
+2023-01-15 13:53:48,193 INFO  [main] <15-01-2023 13:53:48.192 PM> Initialize [Google Chrome] Browser and the Execution Type is [Local]
+2023-01-15 13:53:50,764 INFO  [main] <15-01-2023 13:53:50.764 PM> [Browser Action] Maximize the Browser Window
+2023-01-15 13:53:51,079 INFO  [main] <15-01-2023 13:53:51.079 PM> [Browser Action] Navigate to URL [https://www.zomato.com/abudhabi]
+2023-01-15 13:53:56,421 INFO  [main] <15-01-2023 13:53:56.421 PM> [Element Action] Click on [Accept] Button
+2023-01-15 13:53:56,726 INFO  [main] <15-01-2023 13:53:56.726 PM> [Element Action] Type [nkd Pizza] on element [By.xpath: //input[@placeholder='Search for restaurant, cuisine or a dish']]
+2023-01-15 13:53:57,451 INFO  [main] <15-01-2023 13:53:57.450 PM> [Element Action] Click on element [By.xpath: //input[@placeholder='Search for restaurant, cuisine or a dish']]
+2023-01-15 13:53:59,075 INFO  [main] <15-01-2023 13:53:59.075 PM> [Element Action] Click on [nkd Pizza
+3.9
+DINING
+3.9
+DELIVERY
+Mussafah Sanaiya, Abu Dhabi] Button
+2023-01-15 13:55:03,164 INFO  [main] <15-01-2023 13:55:03.164 PM> Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='sc-eMigcr coAkuy'] (tried for 60 second(s) with 500 milliseconds interval)
+2023-01-15 13:55:04,340 INFO  [main] <15-01-2023 13:55:04.340 PM> [Browser Action] Close all Opened Browser Windows
+2023-01-15 15:48:13,501 INFO  [main] <15-01-2023 15:48:13.481 PM> Initialize [Google Chrome] Browser and the Execution Type is [Local]
+2023-01-15 15:48:22,025 INFO  [main] <15-01-2023 15:48:22.025 PM> [Browser Action] Maximize the Browser Window
+2023-01-15 15:48:22,189 INFO  [main] <15-01-2023 15:48:22.189 PM> [Browser Action] Navigate to URL [https://www.zomato.com/abudhabi]

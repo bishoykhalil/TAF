@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Practice">
+  <test name="Zomato - GUI Test">
+    <classes>
+      <class name="demoBlaze.tests.Gui_AddItemToCart"/>
+    </classes>
+  </test>
+</suite>
