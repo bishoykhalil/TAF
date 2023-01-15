@@ -7,8 +7,8 @@ import java.util.Properties;
 
 public class PropertiesReader {
     private static FileReader reader = null;
-    private static String propRoot = "src/main/resources/";
-    private static Properties p = new Properties();
+    private static final String propRoot = "src/main/resources/";
+    private static final Properties p = new Properties();
 
     public static String getProperty(String propertyFileName, String propertyName) {
 	String propPath = propRoot + propertyFileName;

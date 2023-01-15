@@ -16,39 +16,40 @@ import static com.codeborne.selenide.Selenide.*;
 public class DemoBlaze_ProductsPage {
     private static final Logger LOGGER = LoggerFactory.getLogger(DemoBlaze_SignUpPage.class);
 
-    public <E> E on(Supplier<E> supplier){
+    public <E> E on(Supplier<E> supplier) {
         return supplier.get();
     }
 
     @Step("Check the listed Categories has items")
-    public DemoBlaze_ProductsPage checkListedCategoriesHasItems(){
+    public DemoBlaze_ProductsPage checkListedCategoriesHasItems() {
         $$x("");
         Assert.assertTrue($$x("//div[@id='tbodyid']").size() > 0);
         return page(this);
     }
 
     @Step("Add Item to the cart")
-    public DemoBlaze_ProductsPage addFirstItemToCart(){
+    public DemoBlaze_ProductsPage addFirstItemToCart() {
         $$x("//div[@id='tbodyid']").first().should(Condition.enabled).click();
         $x("//a[text()='Add to cart']").should(Condition.enabled).click();
-        try{
-            Alert alert= switchTo().alert();
-            String alertMsg =alert.getText();
-            if (alertMsg.contains("Product added."))alert.accept();
-            Assert.assertEquals(alertMsg,"Product added.");
-        }catch (AlertNotFoundException e){
+        try {
+            Alert alert = switchTo().alert();
+            String alertMsg = alert.getText();
+            if (alertMsg.contains("Product added.")) alert.accept();
+            Assert.assertEquals(alertMsg, "Product added.");
+        } catch (AlertNotFoundException e) {
             LOGGER.info("Alert not present , Product not added.");
         }
         return page(this);
     }
+
     @Step("Remove Item from Cart")
-    public DemoBlaze_ProductsPage removeItemFromCart(){
+    public DemoBlaze_ProductsPage removeItemFromCart() {
         $x("//a[text()='Delete']").should(Condition.visible).click();
         return page(this);
     }
 
     @Step("check out")
-    public DemoBlaze_ProductsPage checkOut(){
+    public DemoBlaze_ProductsPage checkOut() {
         $x("//button[text()='Place Order']").should(Condition.visible).click();
         $x("//input[@id='name']").setValue("name");
         $x("//input[@id='country']").setValue("Saudi Arabia");

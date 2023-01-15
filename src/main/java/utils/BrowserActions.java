@@ -13,12 +13,12 @@ public class BrowserActions {
     static WebDriver driver;
 
     public enum ConfirmAlertType {
-	ACCEPT, DISMISS;
-    }
+	ACCEPT, DISMISS
+	}
 
     public enum CookieBuilderType {
-	ADD, DELETE;
-    }
+	ADD, DELETE
+	}
 
 //    @Step("Navigate to URL: [{url}]")
     public static void navigateToUrl(WebDriver driver, String url) {

@@ -20,17 +20,17 @@ import io.qameta.allure.Step;
 
 public class BrowserFactory {
 //    private static WebDriver driver;
-    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-    private static String propertiesFileName = "zomato.properties";
-    private static String browserTypeProperty = PropertiesReader.getProperty(propertiesFileName, "browser.type");
-    private static String executionTypeProperty = PropertiesReader.getProperty(propertiesFileName, "execution.type");
-    private static String host = PropertiesReader.getProperty(propertiesFileName, "remote.execution.host");
-    private static String port = PropertiesReader.getProperty(propertiesFileName, "remote.execution.port");
+    private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    private static final String propertiesFileName = "zomato.properties";
+    private static final String browserTypeProperty = PropertiesReader.getProperty(propertiesFileName, "browser.type");
+    private static final String executionTypeProperty = PropertiesReader.getProperty(propertiesFileName, "execution.type");
+    private static final String host = PropertiesReader.getProperty(propertiesFileName, "remote.execution.host");
+    private static final String port = PropertiesReader.getProperty(propertiesFileName, "remote.execution.port");
 
     public enum BrowserType {
 	MOZILLA_FIREFOX("Mozilla Firefox"), GOOGLE_CHROME("Google Chrome"), FROM_PROPERTIES(browserTypeProperty);
 
-	private String value;
+	private final String value;
 
 	BrowserType(String type) {
 	    this.value = type;
@@ -44,7 +44,7 @@ public class BrowserFactory {
     public enum ExecutionType {
 	LOCAL("Local"), REMOTE("Remote"), LOCAL_HEADLESS("Local Headless"), FROM_PROPERTIES(executionTypeProperty);
 
-	private String value;
+	private final String value;
 
 	ExecutionType(String type) {
 	    this.value = type;

@@ -12,9 +12,9 @@ import java.util.Map;
 
 public class ExcelFileManager {
 
-    private File spreadsheet;
+    private final File spreadsheet;
     private Sheet currentSheet;
-    private Map<String, Integer> columns;
+    private final Map<String, Integer> columns;
 
     public ExcelFileManager(File file) {
 	spreadsheet = file;

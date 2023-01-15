@@ -14,11 +14,11 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class ElementActions {
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public enum SelectType {
-	TEXT, VALUE;
-    }
+	TEXT, VALUE
+	}
 
     public ElementActions(WebDriver driver) {
 	this.driver = driver;

@@ -448,3 +448,41 @@ Mussafah Sanaiya, Abu Dhabi] Button
 2023-01-15 15:48:13,501 INFO  [main] <15-01-2023 15:48:13.481 PM> Initialize [Google Chrome] Browser and the Execution Type is [Local]
 2023-01-15 15:48:22,025 INFO  [main] <15-01-2023 15:48:22.025 PM> [Browser Action] Maximize the Browser Window
 2023-01-15 15:48:22,189 INFO  [main] <15-01-2023 15:48:22.189 PM> [Browser Action] Navigate to URL [https://www.zomato.com/abudhabi]
+2023-01-15 19:36:40,939 INFO  [main] <15-01-2023 19:36:40.912 PM> Initialize [Google Chrome] Browser and the Execution Type is [Local]
+2023-01-15 19:36:52,929 INFO  [main] <15-01-2023 19:36:52.929 PM> [Browser Action] Maximize the Browser Window
+2023-01-15 19:36:53,213 INFO  [main] <15-01-2023 19:36:53.213 PM> [Browser Action] Navigate to URL [https://www.zomato.com/abudhabi]
+2023-01-15 19:37:03,475 INFO  [main] <15-01-2023 19:37:03.475 PM> [Element Action] Click on [Accept] Button
+2023-01-15 19:37:04,024 INFO  [main] <15-01-2023 19:37:04.023 PM> [Element Action] Type [nkd Pizza] on element [By.xpath: //input[@placeholder='Search for restaurant, cuisine or a dish']]
+2023-01-15 19:37:05,328 INFO  [main] <15-01-2023 19:37:05.328 PM> [Element Action] Click on element [By.xpath: //input[@placeholder='Search for restaurant, cuisine or a dish']]
+2023-01-15 19:37:07,069 INFO  [main] <15-01-2023 19:37:07.068 PM> [Element Action] Click on [nkd Pizza
+3.9
+DINING
+3.9
+DELIVERY
+Mussafah Sanaiya, Abu Dhabi] Button
+2023-01-15 19:38:15,069 INFO  [main] <15-01-2023 19:38:15.069 PM> Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='sc-eMigcr coAkuy'] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-FL1TM0G', ip: '192.168.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\RIZO\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52081/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1951191c15184dece2776b399b9afc81
+2023-01-15 19:38:17,265 INFO  [main] <15-01-2023 19:38:17.265 PM> [Browser Action] Close all Opened Browser Windows
+2023-01-15 19:38:19,463 INFO  [main] <15-01-2023 19:38:19.463 PM> Initialize [Google Chrome] Browser and the Execution Type is [Local]
+2023-01-15 19:38:22,231 INFO  [main] <15-01-2023 19:38:22.231 PM> [Browser Action] Maximize the Browser Window
+2023-01-15 19:38:22,543 INFO  [main] <15-01-2023 19:38:22.543 PM> [Browser Action] Navigate to URL [https://www.zomato.com/abudhabi]
+2023-01-15 19:38:31,122 INFO  [main] <15-01-2023 19:38:31.122 PM> [Element Action] Click on [Accept] Button
+2023-01-15 19:38:31,651 INFO  [main] <15-01-2023 19:38:31.651 PM> [Element Action] Type [nkd Pizza] on element [By.xpath: //input[@placeholder='Search for restaurant, cuisine or a dish']]
+2023-01-15 19:38:32,510 INFO  [main] <15-01-2023 19:38:32.510 PM> [Element Action] Click on element [By.xpath: //input[@placeholder='Search for restaurant, cuisine or a dish']]
+2023-01-15 19:38:34,618 INFO  [main] <15-01-2023 19:38:34.617 PM> [Element Action] Click on [nkd Pizza
+3.9
+DINING
+3.9
+DELIVERY
+Mussafah Sanaiya, Abu Dhabi] Button
+2023-01-15 19:39:41,430 INFO  [main] <15-01-2023 19:39:41.430 PM> Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='sc-eMigcr coAkuy'] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-FL1TM0G', ip: '192.168.48.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\RIZO\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52197}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52197/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ce82a32b4ad97bcea346714e0ea0a2fb
+2023-01-15 19:39:42,918 INFO  [main] <15-01-2023 19:39:42.918 PM> [Browser Action] Close all Opened Browser Windows

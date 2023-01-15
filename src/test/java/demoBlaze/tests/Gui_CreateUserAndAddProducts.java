@@ -6,9 +6,7 @@ import demoblaze.gui.pages.DemoBlaze_ProductsPage;
 import demoblaze.gui.pages.DemoBlaze_SignUpPage;
 import org.testng.annotations.*;
 import utils.enums.demoBlaze.TabsEnum;
-
-import static com.codeborne.selenide.Selenide.open;
-
+import static com.codeborne.selenide.Selenide.closeWebDriver;
 public class Gui_CreateUserAndAddProducts {
 
     private String username,password;
@@ -27,12 +25,12 @@ public class Gui_CreateUserAndAddProducts {
             "CheckOut"
     })
     public void defineDefaultParams(
-          @Optional String username,
-          @Optional String password,
-          @Optional Boolean checkItems,
-          @Optional Boolean addItem,
-          @Optional Boolean removeItem,
-          @Optional Boolean checkOut){
+            @Optional String username,
+            @Optional String password,
+            @Optional Boolean checkItems,
+            @Optional Boolean addItem,
+            @Optional Boolean removeItem,
+            @Optional Boolean checkOut){
 
         this.username = username != null ? username : "QPROS"+java.time.LocalTime.now();
         this.password= password != null ? password : "123";
@@ -42,7 +40,7 @@ public class Gui_CreateUserAndAddProducts {
         this.checkOut = checkOut != null ? checkOut : false ;
     }
     @Test
-    public void addItemToCart(){
+    public void gui_createUserAndHandleProducts(){
         DemoBlaze_HomePage homePage = new DemoBlaze_HomePage();
         homePage.navigateToHomePage()
                 .selectTabWithName(TabsEnum.SIGN_UP)
@@ -61,7 +59,10 @@ public class Gui_CreateUserAndAddProducts {
         }
         if(checkOut){
             homePage.selectTabWithName(TabsEnum.CART)
-                .on(DemoBlaze_ProductsPage::new).checkOut();}
+                    .on(DemoBlaze_ProductsPage::new).checkOut();}
     }
-
+    @AfterTest
+    public void tearDown(){
+    closeWebDriver();
+    }
 }

@@ -14,8 +14,8 @@ import utils.PropertiesReader;
 
 public class Zomato_HomePage_Page {
 
-    private WebDriver driver;
-    private String zomatoUrl = PropertiesReader.getProperty("zomato.properties",
+    private final WebDriver driver;
+    private final String zomatoUrl = PropertiesReader.getProperty("zomato.properties",
 	    "zomato.homeUrl");
 
     // Constructor
@@ -25,9 +25,9 @@ public class Zomato_HomePage_Page {
 
     // Elements Locators
     
-    private By acceptCookies_btn =By.xpath("//span[contains(text(),'Accept')]"); 
-    private By searchForrestaurant_txt = By.xpath("//input[@placeholder='Search for restaurant, cuisine or a dish']");
-    private By restaurantName_p = By.xpath("//div[@class='sc-eMigcr coAkuy']");
+    private final By acceptCookies_btn =By.xpath("//span[contains(text(),'Accept')]");
+    private final By searchForrestaurant_txt = By.xpath("//input[@placeholder='Search for restaurant, cuisine or a dish']");
+    private final By restaurantName_p = By.xpath("//div[@class='sc-eMigcr coAkuy']");
     
     //////////////////////////// Actions ////////////////////////////
         
