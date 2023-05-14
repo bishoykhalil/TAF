@@ -1,4 +1,4 @@
-package stctv.gui.pages.Bulider;
+package stctv.gui.Bulider;
 
 import lombok.Builder;
 import utils.enums.stcTv.Country;
