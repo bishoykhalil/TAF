@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="STCTV-Validate Package : KUWAIT">
+    <test name="CLASSIC">
+        <parameter name="Country" value="KUWAIT"/>
+        <parameter name="Package" value="CLASSIC"/>
+        <classes>
+            <class name="stcTv.test.StcTv_Gui_ValidatePackages"/>
+        </classes>
+    </test>
+    <test name="LITE">
+        <parameter name="Country" value="KUWAIT"/>
+        <parameter name="Package" value="LITE"/>
+        <classes>
+            <class name="stcTv.test.StcTv_Gui_ValidatePackages"/>
+        </classes>
+    </test>
+    <test name="PREMIUM">
+        <parameter name="Country" value="KUWAIT"/>
+        <parameter name="Package" value="PREMIUM"/>
+        <classes>
+            <class name="stcTv.test.StcTv_Gui_ValidatePackages"/>
+        </classes>
+    </test>
+</suite>
