@@ -1,65 +1,36 @@
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>Bishoy.khalil</groupId>
-    <artifactId>DemoBlaze</artifactId>
+    <groupId>mahmoud.elsharkawy</groupId>
+    <artifactId>Automation-Practice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
-        <selenium.version>4.1.1</selenium.version>
-        <webdrivermanager.version>4.4.3</webdrivermanager.version>
-        <testng.version>7.4.0</testng.version>
-        <allure-testng.version>2.13.9</allure-testng.version>
-        <allure-maven.version>2.10.0</allure-maven.version>
+        <selenium.version>4.10.0</selenium.version>
+        <webdrivermanager.version>5.3.0</webdrivermanager.version>
+        <testng.version>7.6.1</testng.version>
+        <rest-assured.version>5.2.0</rest-assured.version>
+        <json-path.version>2.7.0</json-path.version>
+        <allure-testng.version>2.19.0</allure-testng.version>
+        <allure-maven.version>2.11.2</allure-maven.version>
         <allure-maven-report.version>2.10.0</allure-maven-report.version>
-        <extentreports.version>5.0.8</extentreports.version>
-        <poi-ooxml.version>5.0.0</poi-ooxml.version>
-        <commons-io.version>2.9.0</commons-io.version>
-        <aspectj.version>1.9.8</aspectj.version>
-        <slf4j.version>1.7.30</slf4j.version>
+        <extentreports.version>5.0.9</extentreports.version>
+        <poi-ooxml.version>5.2.3</poi-ooxml.version>
+        <commons-io.version>2.11.0</commons-io.version>
+        <aspectj.version>1.9.9.1</aspectj.version>
+        <slf4j.version>2.0.3</slf4j.version>
         <json-simple.version>1.1.1</json-simple.version>
-        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-        <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
-        <maven.compiler.source>20</maven.compiler.source>
-        <maven.compiler.target>20</maven.compiler.target>
+        <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
+        <maven-surefire-plugin.version>3.0.0-M7</maven-surefire-plugin.version>
+        <lombok.version>1.18.30</lombok.version>
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
             <version>6.14.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-http-jdk-client</artifactId>
-            <version>4.8.3</version>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-chrome-driver</artifactId>
-            <version>4.5.3</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-firefox-driver</artifactId>
-            <version>4.5.3</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>2.13.3</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-            <version>2.13.3</version>
-        </dependency>
-
-
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -75,6 +46,10 @@
                     <groupId>org.slf4j</groupId>
                     <artifactId>slf4j-api</artifactId>
                 </exclusion>
+                <exclusion>
+                    <groupId>com.google.guava</groupId>
+                    <artifactId>guava</artifactId>
+                </exclusion>
             </exclusions>
         </dependency>
 
@@ -84,6 +59,17 @@
             <version>${testng.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>${rest-assured.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <version>${json-path.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.apache.poi</groupId>
@@ -136,21 +122,13 @@
             <artifactId>slf4j-api</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.google.googlejavaformat</groupId>
-            <artifactId>google-java-format</artifactId>
-            <version>1.7</version>
-        </dependency>
+
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-http-jdk-client</artifactId>
-            <version>4.8.1</version>
-        </dependency>
+
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>
             <artifactId>json-simple</artifactId>
@@ -161,6 +139,13 @@
                     <artifactId>junit</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
@@ -192,7 +177,8 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>${maven-surefire-plugin.version}</version>
                     <configuration>
-                         <suiteXmlFiles> <suiteXmlFile>src/test/resources/TestSuits/demoBlaze/Gui_Regression.xml</suiteXmlFile> </suiteXmlFiles>
+                        <!-- <parallel>classes</parallel> <threadCount>4</threadCount> -->
+                        <!-- <suiteXmlFiles> <suiteXmlFile>${testNGSuite}</suiteXmlFile> </suiteXmlFiles> -->
                         <argLine>
                             -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                         </argLine>
@@ -210,24 +196,29 @@
                 </plugin>
             </plugins>
         </pluginManagement>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>17</source>
-                    <target>17</target>
-                </configuration>
-            </plugin>
-        </plugins>
     </build>
 
-    	<profiles>
-    		<profile>
-    			<id>Demo Blaze</id>
-    			<properties>
-    				<testNGSuite>src/test/resources/TestSuits/demoBlaze/Gui_Regression.xml</testNGSuite>
-    			</properties>
-    		</profile>
-    	</profiles>
+    <profiles>
+        <profile>
+            <id>automationPractice</id>
+            <properties>
+                <testNGSuite>src\test\resources\TestSuits\automationPractice.xml</testNGSuite>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>testngGroups</id>
+            <properties>
+                <testNGSuite>src\test\resources\TestSuits\testgroups.xml</testNGSuite>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>xBrowser</id>
+            <properties>
+                <testNGSuite>src\test\resources\TestSuits\Xbrowser.xml</testNGSuite>
+            </properties>
+        </profile>
+    </profiles>
+
 </project>

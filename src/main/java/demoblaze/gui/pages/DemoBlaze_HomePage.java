@@ -1,6 +1,7 @@
 package demoblaze.gui.pages;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import utils.PropertiesReader;
@@ -22,6 +23,7 @@ public class DemoBlaze_HomePage {
 
     @Step("Navigate to home page")
     public DemoBlaze_HomePage navigateToHomePage() {
+        Configuration.browser = "edge";
         open(demoBlazeUrl);
         return page(this);
     }

@@ -1,9 +1,9 @@
 package demoblaze.gui.pages;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.ex.AlertNotFoundException;
 import io.qameta.allure.Step;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.NotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
@@ -53,7 +53,7 @@ public class DemoBlaze_SignUpPage {
             if (alertMsg.contains("Sign up successful")) alert.accept();
             else LOGGER.info("Sign up Failed , Check alert message :" + alert.getText());
             Assert.assertEquals(alertMsg, "Sign up successful.");
-        } catch (AlertNotFoundException e) {
+        } catch (NotFoundException e) {
             LOGGER.info("Alert not present , SignUp Failed ");
         }
         return page(this);

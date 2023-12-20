@@ -1,6 +1,7 @@
 package utils;
 
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
@@ -12,7 +13,7 @@ public class Helper {
 	    .parseInt(PropertiesReader.getProperty("zomato.properties", "webdriver.wait"));
 
     public static WebDriverWait getExplicitWait(WebDriver driver) {
-	return new WebDriverWait(driver, TIMEOUT);
+	return new WebDriverWait(driver, Duration.ofSeconds(TIMEOUT));
     }
 
     public static void implicitWait(WebDriver driver) {
