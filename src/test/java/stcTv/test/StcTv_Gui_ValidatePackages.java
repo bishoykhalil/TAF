@@ -23,7 +23,7 @@ public class StcTv_Gui_ValidatePackages {
         this.tvPackage = tvPackage;
         this.price = country == Country.KSA ? tvPackage.getKsaPrice() :
                 country == Country.BAHRAIN ? tvPackage.getBahPrice() :
-                        country == Country.KUWAIT ? tvPackage.getKuwPrice() : "0";
+                        country == Country.KUWAIT ? tvPackage.getKuwPrice() : null;
         this.currency = country.equals(Country.KSA) ? Currency.SAR :
                 country.equals(Country.BAHRAIN) ? Currency.BHD :
                         country.equals(Country.KUWAIT) ? Currency.KWD : null;
