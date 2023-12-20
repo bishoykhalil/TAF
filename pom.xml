@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>mahmoud.elsharkawy</groupId>
+    <groupId>bishoy.khalil</groupId>
     <artifactId>Automation-Practice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
@@ -197,28 +197,4 @@
             </plugins>
         </pluginManagement>
     </build>
-
-    <profiles>
-        <profile>
-            <id>automationPractice</id>
-            <properties>
-                <testNGSuite>src\test\resources\TestSuits\automationPractice.xml</testNGSuite>
-            </properties>
-        </profile>
-
-        <profile>
-            <id>testngGroups</id>
-            <properties>
-                <testNGSuite>src\test\resources\TestSuits\testgroups.xml</testNGSuite>
-            </properties>
-        </profile>
-
-        <profile>
-            <id>xBrowser</id>
-            <properties>
-                <testNGSuite>src\test\resources\TestSuits\Xbrowser.xml</testNGSuite>
-            </properties>
-        </profile>
-    </profiles>
-
 </project>

@@ -1,9 +1,12 @@
 package stctv.gui.pages;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import utils.PropertiesReader;
 import utils.enums.stcTv.Country;
 
@@ -24,7 +27,7 @@ public class StcTv_HomePage {
 
     @Step("Navigate to STC-Tv home page")
     public StcTv_HomePage navigateToHomePage() {
-        System.setProperty("webdriver.http.factory", "jdk-http-client");
+        Configuration.browser = "edge";
         open(stcTvUrl);
         return page(this);
     }
